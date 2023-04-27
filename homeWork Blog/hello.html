@@ -1,0 +1,31 @@
+<form>
+    <input type="file" id="file-input">
+    <button type="submit" id="submit-btn">Upload</button>
+  </form>
+<script>
+    const fileInput = document.getElementById('file-input');
+const submitBtn = document.getElementById('submit-btn');
+
+submitBtn.addEventListener('click', async (event) => {
+  event.preventDefault();
+
+  const file = fileInput.files[0];
+
+  const formData = new FormData();
+  formData.append('file', file);
+
+  const response = await fetch('screenshot.php', {
+    method: 'POST',
+    body: formData
+  });
+
+  const imageBlob = await response.blob();
+  const imageUrl = URL.createObjectURL(imageBlob);
+
+  const img = new Image();
+  img.src = imageUrl;
+
+  document.body.appendChild(img);
+});
+
+</script>  

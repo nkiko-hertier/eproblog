@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css" >
+	<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+	<title>Epro Blog</title>
+</head>
+<body>
+<header>
+	<nav>
+		<ul class="flex-center">
+			<div class="logo-container nav-aside">
+				<img src="#">
+			</div>
+			<div class="nav-list-container flex-center">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">contact</a></li>
+			</div>
+			<div class="nav-btn nav-aside flex-end">
+				<li><a class="twiter-btn" href="#">Donate</a></li>
+			</div>
+		</ul>
+	</nav>
+</header>
+
+<!-- starting section 1 for search through blog-->
+<section class="sec001">
+	<div class="sec1-container flex-center">
+		<form class="flex-center">
+			<input type="text" class="search" name="search" id="search" placeholder="search by keyword....">
+		    	<a type="submit" class="twiter-background" name="searcher">Search</a>
+	    </form>
+	</div>
+</section>
+
+<!-- starting section 2 for main content(post,widgets)-->
+<section class="sec002">
+	<div class="sec2-container flex-center-top">
+		<div class="post-container">
+
+			<!-- sample post start-->
+			<div class="post">
+				<div class="post-cover">
+					
+				</div>
+				<div class="post-content">
+					<h1>Blog post title</h1>
+					<p>leoms epison space for post description</p>
+				</div>
+				<div class="post-btn-container flex-end">
+					<a class="twiter-btn" href="$row['post_link']">Read More</a>
+				</div>
+			</div>
+			<!-- sample post end-->
+
+			<!-- sample post start-->
+			<div class="other-posts" id="post">
+			<div class="post">
+				<div class="cover-text">
+				<div class="post-cover">
+					
+				</div>
+				<div class="post-content">
+					<h1>Blog post title</h1>
+					<p>leoms epison space for post description
+					space for post descriptionspace for post description
+				space for post descriptionspace for post descriptionspace for post description
+			space for post description...</p>
+				</div></div>
+				<div class="post-btn-container flex-end">
+					<a class="twiter-btn" href="$row['post_link']">Read More</a>
+				</div>
+			</div></div>
+			<!-- sample post end-->
+		</div>
+
+		<!-- starting widgets container -->
+
+		<div class="widget-container">
+
+			<!-- social media widget start-->
+			<div class="social-container widget">
+				<div class="widget-title">
+					<h1>Social Links</h1>
+				</div>
+				<div class="content">
+					<img src="./img/social/fb.PNG">
+					<img src="./img/social/li.PNG">
+					<img src="./img/social/twiter.PNG">
+					<img src="./img/social/youtube.PNG">
+					<img src="./img/social/instagram.PNG">
+				</div>
+			</div>
+
+			<!-- tags widget start-->
+			<div class="tags-container widget">
+				<div class="widget-title">
+					<h1><nkiko>#</nkiko> tags</h1>
+				</div>
+				<div class="content">
+					<p>#home</p>
+					<p>#pro</p>
+					<p>#html</p>
+					<p>#python</p>
+					<p>#programmer</p>
+				</div>
+			</div>
+
+			<!-- advertisement widget start-->
+			<div class="ads-container widget">
+				<div class="widget-title">
+					<h1><nkiko>#</nkiko> tags</h1>
+				</div>
+				<div class="content">
+					<a href="#">
+						<span></span>
+					</a>
+				</div>
+			</div>
+</section>
+<section class="sec003">
+	<div class="sec1-container flex-center">
+		<form>
+			<div class="subscription-content">
+				<h1>Subscribe, to the newslater</h1>
+				<p>
+					submit your email address to a our blog
+					for future post on time, to watch more
+					from us free forever at any time. 
+				</p>
+			</div>
+			<div class="inputs flex-center">
+			<input type="email" placeholder="Enter email address" name="email">
+			<button type="submit">Submit</button></div>
+		</form>
+	</div>
+</section>
+<footer>
+	<div class="footer-container">
+		
+	</div>
+	<div class="copyright-container flex-center">
+		<p>copyright &copy; e-pro blog 2023, all right reserved.
+	</div>
+</footer>
+<script type="text/javascript">
+	let i = 0;
+	let dupli = post.innerHTML;
+	while(i<10){
+		post.innerHTML += dupli;
+		i++;
+	}
+	function takeScreenshot() {
+  html2canvas(document.body).then(function(canvas) {
+    document.getElementById("screenshot").appendChild(canvas);
+  });
+}
+
+</script>
+</body>
+</html>

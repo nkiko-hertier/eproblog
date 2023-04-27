@@ -1,0 +1,150 @@
+#screenshot {
+	width: 100%;
+	height: auto;
+  }
+  
+  #screenshot canvas {
+	width: 100%;
+	height: auto;
+  }
+  
+
+
+/* section one styles */
+.sec1-container{
+	min-height: 500px;
+	background-image: linear-gradient(#09f, transparent), url('./img/download.jpg');
+	background-size: cover;
+}
+.sec1-container form{
+	width: 60%;
+}
+.sec001 .sec1-container form{
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px -5px;
+}
+body{
+	background: #f9f9f9;
+}
+form .search{
+	width: 200px;
+	border: 1px solid #09f;
+}
+.sec1-container form a{
+	color: white;
+	padding: 20px 30px;
+	border-radius: 0px 10px 10px 0px;
+}
+form .search{
+	padding: 21px 30px;
+	outline: none;
+	background: white;
+	width: 100%;
+	border-radius: 10px 0px 0px 10px;
+}
+/* styles for section two*/
+.sec002{
+	background: white;
+}
+.post-container{
+	width: 60%;
+	margin-right: 20px;
+}
+.post{
+	border-radius: 2px;
+	width: 100%;
+	margin: 20px 0px 0px 0px;
+	padding: 20px 15px;
+	box-shadow: 0px 0px 30px -20px;
+}
+.post-cover{
+	background-image: linear-gradient(#09f, transparent), url('./img/search-cover.jpg');
+	background-size: cover;
+	height: 300px;
+}
+.widget{
+	border: 1px solid #09f;
+	margin-top: 20px;
+	width: 100%;
+	padding: 10px 20px;
+}
+.widget-container{
+	width: 20%;
+	margin-left: 40px;
+	position: sticky;
+	top: 0;
+}
+.tags-container .content p{
+	border-radius: 20px;
+	background: #09f;
+	color: #fff;
+	width: fit-content;
+	padding: 5px 10px;
+	margin: 5px;
+}
+.tags-container .content{
+	display: flex;
+	flex-wrap: wrap;
+}
+.other-posts .post .cover-text{
+	display: flex;
+	padding: 0;
+}
+.other-posts .post{
+	position: relative;
+}
+.other-posts .post .post-content{
+	padding: 10px 20px;
+	width: 60%;
+}
+.other-posts .post .post-content h1{
+	font-size: 36px;
+}
+.other-posts .post .post-cover{
+	height: 200px;
+	width: 200px;
+}
+.other-posts .post-btn-container a{
+	position: absolute;
+	bottom: 10px;
+}
+.sec2-container{
+	padding-bottom: 30px;
+}
+/* section 3 styles */
+.sec003 .sec1-container{
+	text-align: center;
+	font-size: 30px;
+	background-image: none;
+}
+.sec003 .sec1-container form{
+	width: 60%;
+}
+.sec003 .sec1-container form .inputs{
+	padding: 20px 10px;
+}
+.sec003 .sec1-container form input{
+	padding: 19px 30px;
+	border: none;
+	outline: none;
+	background: white;
+	width: 100%;
+	width: 200px;
+	border: 1px solid #333;
+	border-radius: 10px 0px 0px 10px;
+}
+.sec003 .sec1-container form button{
+	color: white;
+	padding: 20px 30px;
+	border: none;
+	border-radius: 0px 10px 10px 0px;
+	background: #232323;
+}
+footer .copyright-container{
+	background: #09f;
+	display: flex;
+	text-align: center;
+	padding: 20px;
+	color: #fff;
+	box-shadow: -20px -20px 30px 20px;
+}
